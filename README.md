@@ -57,6 +57,7 @@ recipe-word2vec-hf/
 ├── analyze_dataset.py     ← EDA: stats + charts into analysis/
 ├── train.py               ← Word2Vec training + recipe vectors
 ├── app.py                 ← Gradio web app for HF Spaces
+├── streamlit_app.py       ← Streamlit ingredient pairing UI
 ├── analysis/              ← generated: stats.json, charts, samples
 └── data/                  ← generated: raw dataset archive + CSVs
 ```
@@ -169,16 +170,26 @@ git push
 
 HF builds the container, pip-installs deps, downloads your three artifacts at startup, and serves the UI. Try the bundled examples (`chicken tomato cheese pasta`, `chocolate flour egg butter sugar`, ...).
 
+## 9. Streamlit — Ingredient Pairing UI
+
+A lightweight alternative focused on **ingredient-to-ingredient** similarity (no recipe retrieval). Uses `word2vec.most_similar()` to find what goes with a given ingredient.
+
+```bash
+streamlit run streamlit_app.py
+```
+
+Opens at `http://localhost:8501`. Type an ingredient (e.g. `garlic`, `chocolate`, `cumin`) and get the top 5 semantically closest ingredients from the training corpus. Quick example buttons included.
+
 ---
 
-## 9. Extending
+## 10. Extending
 
 - **True generation:** fine-tune GPT-2 / a small LLM on the corpus and feed the retrieved top-3 recipes as in-context examples (RAG).
 - **Better embeddings:** swap Word2Vec for `sentence-transformers/all-MiniLM-L6-v2` (`util.cos_sim`) — less custom code, usually stronger retrieval.
 - **Diet filters:** post-filter retrieved hits by NER tags (and remember to drop that `"none"` tag first).
 - **Faster startup:** save gensim `KeyedVectors` only (`model.wv.save`) instead of the full model.
 
-## 10. Troubleshooting
+## 11. Troubleshooting
 
 | Symptom | Fix |
 |---|---|
