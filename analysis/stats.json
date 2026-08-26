@@ -23,20 +23,19 @@
       },
       "tokens_per_recipe": {
         "count": {
-          "mean": 171.96,
+          "mean": 171.75,
           "median": 145.0,
-          "p90": 300.3000000000002,
+          "p90": 300.0,
           "min": 7,
           "max": 1564
         }
       },
-      "corpus_tokens_total": 1052047,
+      "corpus_tokens_total": 1050746,
       "vocab_size_raw": 13980,
       "vocab_size_min_count_2": 9059,
       "token_coverage_at_min_count_2_pct": 99.5,
       "top_25_ner_ingredients": {
         "salt": 2115,
-        "none": 1298,
         "olive oil": 1119,
         "garlic": 1050,
         "water": 843,
@@ -59,7 +58,8 @@
         "garlic cloves": 288,
         "granulated sugar": 288,
         "milk": 286,
-        "brown sugar": 282
+        "brown sugar": 282,
+        "soy sauce": 281
       },
       "top_25_tokens": {
         "the": 53177,
@@ -111,20 +111,19 @@
       },
       "tokens_per_recipe": {
         "count": {
-          "mean": 169.81,
-          "median": 141.0,
+          "mean": 169.52,
+          "median": 140.5,
           "p90": 296.1,
-          "min": 12,
+          "min": 9,
           "max": 1407
         }
       },
-      "corpus_tokens_total": 183392,
+      "corpus_tokens_total": 183083,
       "vocab_size_raw": 6840,
       "vocab_size_min_count_2": 4544,
       "token_coverage_at_min_count_2_pct": 98.7,
       "top_25_ner_ingredients": {
         "salt": 366,
-        "none": 309,
         "olive oil": 187,
         "garlic": 180,
         "sugar": 138,
@@ -147,7 +146,8 @@
         "pepper": 50,
         "baking powder": 48,
         "vegetable oil": 47,
-        "red bell pepper": 45
+        "red bell pepper": 45,
+        "carrots": 44
       },
       "top_25_tokens": {
         "the": 9562,
@@ -174,7 +174,7 @@
         "chicken": 949,
         "over": 946,
         "sugar": 933,
-        "none": 931
+        "butter": 916
       }
     }
   }

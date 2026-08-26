@@ -109,7 +109,7 @@ Key takeaways:
 - **All distributions are right-skewed** — most recipes are compact (≈9 ingredients, ≈10 steps) with a long tail of monsters. See `analysis/distributions.png`.
 - **`min_count=2` is validated by the data**: it discards 35% of vocabulary *types* but only 0.5% of token *occurrences* — perfect for pruning noise without losing signal.
 - **Top ingredients** (`analysis/top_ingredients.png`): `salt` (2,115), `olive oil` (1,119), `garlic` (1,050), `water`, `black pepper`, `sugar`, `butter`… The corpus is dominated by savory Western home cooking; expect the embedding neighborhood of *garlic* to include *onion*, *olive oil*, *clove*.
-- **Quirk:** 1,298 train recipes carry the literal NER tag `"none"` — a data artifact worth knowing about (harmless for retrieval; filter it if you build diet/ingredient filters on NER).
+- **Data cleaning:** 1,298 train recipes carried the literal NER tag `"none"` — filtered out in `data_loader.py` as a preprocessing step (no food signal).
 - Most frequent tokens are cooking-verbs and units (`add`, `heat`, `cup`, `teaspoon`, `until`, `minutes`) — exactly the glue words that make doc-centroids cluster by *cuisine and technique*, which is what retrieval wants.
 
 ![Dataset distributions](analysis/distributions.png)

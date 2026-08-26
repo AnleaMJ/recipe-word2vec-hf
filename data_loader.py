@@ -33,7 +33,8 @@ def _split_list(value) -> list[str]:
     text = str(value or "").strip()
     if not text or text.lower() in {"nan", "none"}:
         return []
-    return [p.strip() for p in text.split(",") if p.strip()]
+    items = [p.strip() for p in text.split(",") if p.strip()]
+    return [item for item in items if item.lower() != "none"]
 
 
 def _split_steps(value) -> list[str]:
