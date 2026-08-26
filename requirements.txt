@@ -1,0 +1,9 @@
+numpy>=1.24,<2.0
+scipy<1.14
+gensim>=4.3.3
+scikit-learn
+gradio>=4.0
+huggingface_hub
+gdown
+pandas
+matplotlib

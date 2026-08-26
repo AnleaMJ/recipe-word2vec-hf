@@ -1,0 +1,181 @@
+{
+  "dataset": "m3hrdadfi/recipe_nlg_lite",
+  "splits": {
+    "train": {
+      "num_rows": 6118,
+      "ingredients_per_recipe": {
+        "count": {
+          "mean": 10.22,
+          "median": 9.0,
+          "p90": 17.0,
+          "min": 1,
+          "max": 62
+        }
+      },
+      "steps_per_recipe": {
+        "count": {
+          "mean": 11.62,
+          "median": 10.0,
+          "p90": 22.0,
+          "min": 1,
+          "max": 107
+        }
+      },
+      "tokens_per_recipe": {
+        "count": {
+          "mean": 171.96,
+          "median": 145.0,
+          "p90": 300.3000000000002,
+          "min": 7,
+          "max": 1564
+        }
+      },
+      "corpus_tokens_total": 1052047,
+      "vocab_size_raw": 13980,
+      "vocab_size_min_count_2": 9059,
+      "token_coverage_at_min_count_2_pct": 99.5,
+      "top_25_ner_ingredients": {
+        "salt": 2115,
+        "none": 1298,
+        "olive oil": 1119,
+        "garlic": 1050,
+        "water": 843,
+        "kosher salt": 799,
+        "black pepper": 716,
+        "sugar": 696,
+        "butter": 529,
+        "extra virgin olive oil": 486,
+        "onion": 465,
+        "eggs": 431,
+        "vanilla extract": 412,
+        "all purpose flour": 411,
+        "unsalted butter": 392,
+        "garlic powder": 378,
+        "honey": 334,
+        "flour": 307,
+        "vegetable oil": 304,
+        "pepper": 303,
+        "baking powder": 292,
+        "garlic cloves": 288,
+        "granulated sugar": 288,
+        "milk": 286,
+        "brown sugar": 282
+      },
+      "top_25_tokens": {
+        "the": 53177,
+        "and": 41922,
+        "with": 16815,
+        "cup": 13387,
+        "salt": 12296,
+        "oil": 10324,
+        "pepper": 10269,
+        "until": 10266,
+        "minutes": 9992,
+        "add": 9325,
+        "for": 9083,
+        "teaspoon": 7936,
+        "garlic": 6996,
+        "tablespoon": 6914,
+        "heat": 6533,
+        "chicken": 6158,
+        "sugar": 6132,
+        "sauce": 6127,
+        "into": 5947,
+        "cheese": 5693,
+        "large": 5628,
+        "water": 5612,
+        "oven": 5434,
+        "fresh": 5434,
+        "over": 5373
+      }
+    },
+    "test": {
+      "num_rows": 1080,
+      "ingredients_per_recipe": {
+        "count": {
+          "mean": 9.99,
+          "median": 9.0,
+          "p90": 16.0,
+          "min": 1,
+          "max": 39
+        }
+      },
+      "steps_per_recipe": {
+        "count": {
+          "mean": 11.53,
+          "median": 10.0,
+          "p90": 21.0,
+          "min": 1,
+          "max": 108
+        }
+      },
+      "tokens_per_recipe": {
+        "count": {
+          "mean": 169.81,
+          "median": 141.0,
+          "p90": 296.1,
+          "min": 12,
+          "max": 1407
+        }
+      },
+      "corpus_tokens_total": 183392,
+      "vocab_size_raw": 6840,
+      "vocab_size_min_count_2": 4544,
+      "token_coverage_at_min_count_2_pct": 98.7,
+      "top_25_ner_ingredients": {
+        "salt": 366,
+        "none": 309,
+        "olive oil": 187,
+        "garlic": 180,
+        "sugar": 138,
+        "water": 136,
+        "kosher salt": 127,
+        "black pepper": 119,
+        "butter": 101,
+        "extra virgin olive oil": 96,
+        "eggs": 83,
+        "onion": 83,
+        "all purpose flour": 69,
+        "flour": 67,
+        "garlic powder": 64,
+        "unsalted butter": 60,
+        "honey": 57,
+        "vanilla extract": 56,
+        "soy sauce": 55,
+        "milk": 51,
+        "large eggs": 50,
+        "pepper": 50,
+        "baking powder": 48,
+        "vegetable oil": 47,
+        "red bell pepper": 45
+      },
+      "top_25_tokens": {
+        "the": 9562,
+        "and": 7135,
+        "with": 2879,
+        "cup": 2239,
+        "salt": 2098,
+        "oil": 1845,
+        "until": 1717,
+        "for": 1681,
+        "minutes": 1676,
+        "add": 1632,
+        "pepper": 1609,
+        "teaspoon": 1308,
+        "tablespoon": 1204,
+        "heat": 1158,
+        "garlic": 1124,
+        "into": 1053,
+        "water": 1018,
+        "sauce": 968,
+        "fresh": 961,
+        "large": 954,
+        "olive": 952,
+        "chicken": 949,
+        "over": 946,
+        "sugar": 933,
+        "none": 931
+      }
+    }
+  }
+}

@@ -1,0 +1,102 @@
+[
+  {
+    "uid": "dab8b7d0-e0f6-4bb0-aed9-346e80dace1f",
+    "name": "pork chop noodle soup",
+    "ner": [
+      "bone in pork chops",
+      "salt",
+      "pepper",
+      "vegetable oil",
+      "chicken broth",
+      "vegetable broth",
+      "red onion",
+      "carrots",
+      "garlic",
+      "dried thyme",
+      "dried basil",
+      "rotini pasta",
+      "celery"
+    ],
+    "ingredients": [
+      "3.0 bone in pork chops",
+      "salt",
+      "pepper",
+      "2.0 tablespoon vegetable oil",
+      "2.0 cup chicken broth",
+      "4.0 cup vegetable broth",
+      "1.0 red onion",
+      "4.0 carrots",
+      "2.0 clove garlic",
+      "1.0 teaspoon dried thyme",
+      "0.5 teaspoon dried basil",
+      "1.0 cup rotini pasta",
+      "2.0 stalk celery"
+    ]
+  },
+  {
+    "uid": "b03f346bf39efcbace5d30a8f962147c8c4c361f",
+    "name": "5 ingredient almond cake with fresh berries",
+    "ner": [
+      "large eggs",
+      "large egg whites",
+      "sugar",
+      "pure vanilla extract",
+      "fine sea salt",
+      "200 grams almond flour or almond meal",
+      "mixed berries",
+      "powdered sugar"
+    ],
+    "ingredients": [
+      "3 large eggs",
+      "3 large egg whites",
+      "2/3 cup sugar",
+      "1 tsp pure vanilla extract",
+      "pinch fine sea salt",
+      "2 cups 200 grams almond flour or almond meal",
+      "1 cup mixed berries",
+      "powdered sugar"
+    ]
+  },
+  {
+    "uid": "89b49e742b2c1d234b83044c14d81155dfea7f19",
+    "name": "shrimp cakes",
+    "ner": [
+      "peeled and deveined jumbo shrimp",
+      "plus 3 tablespoons whole wheat plain panko",
+      "red onion",
+      "finely diced red bell pepper",
+      "finely diced celery",
+      "chopped fresh parsley",
+      "light mayonnaise",
+      "dijon mustard",
+      "large egg",
+      "fresh lemon juice",
+      "old bay seasoning",
+      "garlic powder",
+      "freshly ground black pepper",
+      "kosher salt",
+      "olive oil",
+      "lemon wedges",
+      "hot sauce"
+    ],
+    "ingredients": [
+      "1 pound peeled and deveined jumbo shrimp",
+      "1 cup plus 3 tablespoons whole wheat plain panko",
+      "1/4 cup red onion",
+      "1/4 cup finely diced red bell pepper",
+      "1/4 cup finely diced celery",
+      "2 tablespoons chopped fresh parsley",
+      "1 tablespoons light mayonnaise",
+      "1 teaspoon dijon mustard",
+      "1 large egg",
+      "2 tablespoon fresh lemon juice",
+      "3/4 teaspoon old bay seasoning",
+      "1/2 teaspoon garlic powder",
+      "freshly ground black pepper",
+      "1/4 teaspoon kosher salt",
+      "2 tablespoons olive oil",
+      "lemon wedges",
+      "hot sauce"
+    ]
+  }
+]
