@@ -8,7 +8,7 @@ from gensim.models import Word2Vec
 from sklearn.preprocessing import normalize
 from huggingface_hub import HfApi, create_repo, upload_file
 
-from data_loader import DATASET_NAME, load_split
+from data_loader import DATASET_NAME, load_split, load_indian
 SAVE_DIR = Path("hf_model_repo")
 SAVE_DIR.mkdir(exist_ok=True)
 
@@ -52,14 +52,19 @@ def preprocess_recipe(recipe: dict) -> list[str]:
 
 
 def train():
-    print(f"Loading dataset: {DATASET_NAME} ...")
-    ds = load_split("train")
+    print(f"Loading general dataset: {DATASET_NAME} ...")
+    general = load_split("train")
+    print(f"Loading Indian dataset ...")
+    indian = load_indian()
+
+    all_recipes = general + indian
+    print(f"Combined corpus: {len(general)} general + {len(indian)} Indian = {len(all_recipes)} recipes")
 
     print("Preprocessing recipes...")
     corpus_tokens = []
     metadata = []
 
-    for ex in ds:
+    for ex in all_recipes:
         tokens = preprocess_recipe(ex)
         if not tokens:
             continue
